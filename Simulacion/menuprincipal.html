@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Menú de Simulacion</title>
+<link rel="stylesheet" type="text/css" href="menuestilo.css">
+<style>
+  .team-list {
+    display: none;
+    margin-top: 10px;
+    text-align: left;
+  }
+</style>
+</head>
+<body>
+
+<div class="menu-panel">
+  <div class="menu-title">Menú</div>
+  <a href="cuadradosmedios.html" class="menu-button">Cuadrados Medios</a>
+  <a href="productosmedios.html" class="menu-button">Productos Medios</a>
+  <a href="multiplicaconstante.html" class="menu-button">Multiplicador Constante</a>
+  <a href="congruencialineal.html" class="menu-button">Congruencia Lineal</a>
+  <a href="congruencialmultiplicativo.html" class="menu-button">Congruencial Multiplicativo</a>
+  <a href="aditivo.html" class="menu-button">Congruencial Aditivo</a>
+  <a href="#" class="menu-button">Botón</a>
+  <a href="#" class="menu-button team-button">Integrantes del equipo</a>
+  <ul class="team-list">
+    <li>Daniel Turrubiates Cervantes (2213520322)</li>
+    <li>Marco Antonio Soria Ortiz (2173510311)</li>
+    <li>Leonardo Ramos Espinoza (2173510264)</li>
+    <li>Sebastian Rodela Castillo (2173510277)</li>
+  </ul>
+</div>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    const teamButton = document.querySelector(".team-button");
+    const teamList = document.querySelector(".team-list");
+
+    teamButton.addEventListener("click", function() {
+      if (teamList.style.display === "none") {
+        teamList.style.display = "block";
+      } else {
+        teamList.style.display = "none";
+      }
+    });
+  });
+</script>
+
+</body>
+</html>

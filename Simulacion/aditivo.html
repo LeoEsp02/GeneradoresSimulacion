@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <center><title>Congruencial Aditivo</title></center>
+    <link rel="stylesheet" href="aditivo.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+   <center><h1>Congruencial Aditivo</h1>
+    <form id="inputForm">
+       <center> <label for="seed1">Semilla 1:</label></center>
+       <center>  <input type="text" id="seed1" required></center>
+        <center><label for="seed2">Semilla 2:</label></center>
+            <center><input type="text" id="seed2" required></center>
+                <center><label for="seed3">Semilla 3:</label></center>
+                    <center> <input type="text" id="seed3" required></center>
+                        <center>  <label for="seed4">Semilla 4:</label></center>
+                            <center><input type="text" id="seed4" required></center>
+                    <center><label for="seed5">Semilla 5:</label></center>
+             <center> <input type="text" id="seed5" required></center>
+        <br>
+        <strong><button type="submit">Generar</button></strong>
+    </form>
+
+    <div>
+        <canvas id="chart" width="200" height="250"></canvas>
+    </div>
+
+    <table id="tabla-resultados">
+        <thead>
+            <tr>
+                <th>Iteración</th>
+                <th>Operación</th>
+                <th>Número Generado</th>
+                <th>División Realizada</th>
+                <th>r (División)</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+    <br>
+   <center><strong><a href="menuprincipal.html" class="menu-button">Regresar a Inicio</a></strong></center>
+
+    <script src="aditivo.js"></script>
+</body>
+
+</html>

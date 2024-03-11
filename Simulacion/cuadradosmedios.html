@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="estilogeneral.css">
+  <title>Cuadrados Medios</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>Cuadrados Medios</h1>
+    <form id="cuadradosMediosForm">
+      <label for="seed">Semilla:</label>
+      <input type="text" id="seed" required>
+      
+      <label for="iterations">Iteraciones:</label>
+      <input type="number" id="iterations" min="1" value="500" readonly>
+
+      <button type="button" onclick="cuadradosMedios()">Calcular</button>
+    </form>
+
+    <div>
+      <canvas id="scatterChart" width="800" height="400"></canvas>
+    </div>
+
+    <table id="resultTable">
+      <thead>
+        <tr>
+          <th>Iteración</th>
+          <th>Semilla</th>
+          <th>Producto</th>
+          <th>Dígitos Medios</th>
+          <th>Resultado</th>
+        </tr>
+      </thead>
+      <tbody id="resultBody"></tbody>
+    </table>
+    <strong><a href="menuprincipal.html" class="menu-button">Regresar a Inicio</a></strong>
+
+  </div>
+  <script src="cuadradosmedios.js"></script>
+</body>
+</html>

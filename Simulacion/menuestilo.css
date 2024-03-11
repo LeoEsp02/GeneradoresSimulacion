@@ -1,0 +1,45 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #ca5f12,  #a09393);
+  }
+  
+  .menu-panel {
+    width: 300px;
+    margin: 50px auto;
+    padding: 20px;
+    background: linear-gradient(to right, #4a4a4a, #8b4513);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+  }
+  
+  .menu-title {
+    font-size: 24px;
+    color: #fff;
+    margin-bottom: 20px;
+  }
+  
+  .menu-button {
+    display: block;
+    width: max-content;
+    padding: 10px 20px;
+    margin: 0 auto 10px auto; 
+    background-color: #ddd;
+    border-radius: 5px;
+    font-size: 18px;
+    color: #333;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .menu-button:hover {
+    background-color: #aaa;
+  }
+  
+  .team-list {
+    display: none;
+    color: #fff;
+    margin-top: 10px;
+    text-align: left;
+  }
+  

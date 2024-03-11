@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generador Congruencial Multiplicativo</title>
+    <link rel="stylesheet" href="segundaparte.css">
+</head>
+
+<body>
+    <div id="titulo">
+        <h2>Generador Congruencial Multiplicativo</h2>
+    </div>
+    <div class="contenedor">
+        <div class="caja-gen">
+            <div class="form-est">
+                <strong><label for="semilla">Semilla:</label></strong>
+                <input type="text" id="semilla">
+            </div>
+            <div class="form-est">
+                <strong><label for="a">a:</label></strong>
+                <input type="text" id="a">
+            </div>
+            <div class="form-est">
+                <strong><label for="m">m:</label></strong>
+                <input type="text" id="m">
+            </div>
+<center><button class="myButton" onclick="generarNumeros()">Generar</button></center>
+        </div>
+    </div>
+    <table id="tabla-resultados">
+        <thead>
+            <tr>
+                <strong><th>Iteración</th></strong>
+                <strong><th>Operación</th></strong>
+                <strong><th>Número Generado</th></strong>
+                <strong><th>División Realizada</th></strong>
+                <strong><th>r (División)</th></strong>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+
+    <canvas id="grafica" width="600" height="400"></canvas>
+<br>
+    <center><strong><a href="menuprincipal.html" class="menu-button">Regresar a Inicio</a></strong></center>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="congruencialmultiplicativo.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generador Congruencial Lineal</title>
+    <link rel="stylesheet" href="segundaparte.css">
+</head>
+
+<body>
+    <div id="titulo">
+        <h2>Generador Congruencial Lineal</h2>
+        <strong>Rellena las casillas por favor</strong>
+    </div>
+    <div class="contenedor">
+        <div class="caja-gen">
+            <div class="form-est">
+               
+                <strong><label for="semilla">Semilla:</label></strong>
+                <input type="text" id="semilla">
+            </div>
+            <div class="form-est">
+               <strong> <label for="a">a:</label></strong>
+                <input type="text" id="a">
+            </div>
+            <div class="form-est">
+                <strong><label for="m">m:</label></strong>
+                <input type="text" id="m">
+            </div>
+            <div class="form-est">
+                <strong><label for="c">c:</label></strong>
+                <input type="text" id="c">
+            </div>
+           <center> <button class="myButton" onclick="generarNumeros()">Generar</button></center>
+        </div>
+    </div>
+    <table id="tabla-resultados">
+        <thead>
+            <tr>
+                <th>Iteración</th>
+                <th>Operación</th>
+                <th>Número Generado</th>
+                <th>División Realizada</th>
+                <th>r (División)</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+
+    <canvas id="grafica" width="400" height="250"></canvas>
+    <br>
+    <center><strong><a href="menuprincipal.html" class="menu-button">Regresar a Inicio</a></strong></center>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="congruencialineal.js"></script>
+</body>
+
+</html>

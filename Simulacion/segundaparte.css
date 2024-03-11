@@ -1,0 +1,103 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#titulo {
+    margin-top: 50px;
+    text-align: center;
+}
+
+*:focus {
+    outline: 0;
+}
+
+table {
+    border-collapse: collapse;
+    width: 60%;
+    margin: 20px auto;
+}
+
+label {
+    margin-right: 6px;
+    width: 70px;
+    text-align: center;
+}
+
+th,
+td {
+    text-align: center;
+    padding: 8px;
+}
+
+td {
+    border: 1px solid #d7d7d7;
+}
+
+th {
+    background-color: #5bc43c;
+    color: rgb(255, 255, 255);
+}
+
+input {
+    padding-top: 5px;
+    padding-bottom: 4px;
+    font-size: 15px;
+    border-radius: 10px;
+    border-width: 0px;
+    border-color: #cacaca;
+    margin-top: 3px;
+    padding-left: 8px;
+    width: 96%;
+}
+
+.myButton {
+    background-color: #119e34;
+    border-radius: 28px;
+    border: transparent;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: Arial;
+    font-size: 14px;
+    padding: 10px 25px;
+    width: 170px;
+    margin: 20px auto;
+}
+
+.myButton:hover {
+    background-color: #1bc55c;
+}
+
+.caja-gen {
+    background-color: #e0e0e0;
+    border-radius: 20px;
+    padding: 15px;
+    padding-left: 40px;
+    padding-top: 30px;
+    padding-right: 50px;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+}
+
+.contenedor {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.row-est {
+    display: inline;
+    width: 370px;
+    margin-right: 20px;
+}
+
+.form-est {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+canvas {
+    margin-top: 20px;
+}
